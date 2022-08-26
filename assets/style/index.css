@@ -1,0 +1,176 @@
+.special {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1296px; }
+  @media (max-width: 576px) {
+    .special {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (max-width: 992px) {
+    .special {
+      max-width: 767px; } }
+  .special .quickLink ul {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 8px; }
+    @media (max-width: 992px) {
+      .special .quickLink ul {
+        width: 40%; } }
+    @media (max-width: 576px) {
+      .special .quickLink ul {
+        width: 80%;
+        padding-top: 16px; } }
+  .special .hashtag ul {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 8px; }
+    .special .hashtag ul li {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px; }
+      @media (max-width: 576px) {
+        .special .hashtag ul li {
+          font-size: 16px;
+          line-height: 24px; } }
+    @media (max-width: 992px) {
+      .special .hashtag ul {
+        width: 25%; } }
+
+.container4Content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1296px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 992px) {
+    .container4Content {
+      max-width: 767px; } }
+  @media (max-width: 576px) {
+    .container4Content {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .container4Content .content {
+    width: 65%; }
+    .container4Content .content h1 {
+      font-size: 48px;
+      line-height: 72px;
+      margin-bottom: 8px; }
+      @media (max-width: 576px) {
+        .container4Content .content h1 {
+          font-size: 24px;
+          line-height: 36px; } }
+    .container4Content .content h2 {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 8px; }
+    .container4Content .content img {
+      width: 100%; }
+    .container4Content .content p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+      margin-top: 8px;
+      margin-bottom: 40px; }
+      @media (max-width: 576px) {
+        .container4Content .content p {
+          margin-bottom: 16px; } }
+    @media (max-width: 992px) {
+      .container4Content .content {
+        width: 80%; } }
+    @media (max-width: 576px) {
+      .container4Content .content {
+        width: 100%;
+        margin-bottom: 48px; } }
+  .container4Content .TAGS {
+    margin-left: 24px;
+    width: 70%; }
+    .container4Content .TAGS h2 {
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: bold;
+      color: #AA0601;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .container4Content .TAGS h2 span {
+        font-size: 48px;
+        color: #AA0601;
+        margin-right: 12px; }
+    .container4Content .TAGS .hashtag ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .container4Content .TAGS .hashtag ul li {
+        font-size: 24px;
+        line-height: 36px;
+        color: #AA0601;
+        padding-right: 24px;
+        font-weight: bold; }
+    @media (max-width: 992px) {
+      .container4Content .TAGS {
+        width: 20%; } }
+    @media (max-width: 576px) {
+      .container4Content .TAGS {
+        display: none; } }
+
+.shareLink {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #707070;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1296px; }
+  @media (max-width: 576px) {
+    .shareLink {
+      display: none; } }
+  .shareLink .share {
+    width: 23%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .shareLink .share p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0px; }
+    .shareLink .share img {
+      width: 24px;
+      height: 24px; }
+
+.relation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 80px; }
+  .relation .previous {
+    line-height: 24px; }
+    .relation .previous span {
+      font-size: 24px; }
+  .relation .next {
+    line-height: 24px; }
+  @media (max-width: 576px) {
+    .relation {
+      display: none; } }
+
+/*# sourceMappingURL=index.css.map */
