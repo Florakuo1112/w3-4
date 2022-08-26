@@ -1,0 +1,350 @@
+@mixin pad{
+    @media (max-width:992px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width:576px){
+        @content;
+    }
+    
+}
+//版面設定//
+.container{
+    padding-left: 12px;
+    padding-right: 12px;
+    .header{
+        background-color: #aa0601;
+        @include pad{
+        padding-left: 36px;
+        padding-right: 36px;}
+        @include mobile{
+        padding-left: 0px;
+        padding-right: 0px;
+        }
+
+    }
+    .navBar{
+        background-color: #650300;
+        @include pad{
+        padding-left: 36px;
+        padding-right: 36px;}
+        @include mobile{
+        display: none;
+        }
+
+    }
+    .footer{
+        background-color: #aa0601;
+        @include pad{
+        padding-left: 36px;
+        padding-right: 36px;}
+        @include mobile{
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+}
+
+
+.topMenu{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1296px;
+    @include pad{
+        max-width: 767px;
+    }
+    @include mobile{
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        box-sizing: border-box;
+            @include mobile{
+                width: 100%;
+                display: block;
+            }
+        }
+
+    img{
+        display: block;
+        width:80px;
+        height:48.57px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
+
+    .linkHeader {
+        width: 35%;
+        ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        li{
+            font-size: 20px;
+            line-height: 80px;
+            @include mobile{
+                
+            }
+         }
+        }
+        @include pad{
+                width: 70%;
+            }
+        @include mobile{
+            width: 100%;
+            ul{
+                flex-wrap: wrap;
+                display: flex;
+                width: 100%;
+                
+
+            
+            li{
+            width: 49.4%;
+            text-align: center;
+            border: 1px solid white;
+            margin-bottom: 0px;
+            font-size: 16px;
+            line-height: 48px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+
+        }
+        }
+        }
+    }
+
+
+.navBar{
+
+
+    .menu{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1296px;
+
+    display: flex;
+    justify-content: space-between;
+    .linkTree{
+        width:35%;
+        ul{
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            li{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        @include pad{
+            width: 65%;
+        }
+    }
+
+    .search{
+        height: 56px;
+        display: flex;
+        align-items: center;
+        span{
+            color: white;
+            font-size: 30px;
+        }
+    }
+}
+}
+
+.footer{
+    .footerTop{
+    @include mobile(){
+        padding-top: 24px;
+        padding-bottom: 0px;
+    }
+    padding-top: 56px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+        .linkFooter{
+        display: block;
+        width: 60%;
+        @include pad{
+            width: 75%;
+        }
+
+            .bottomMenu{
+                padding-bottom: 41px;
+                @include mobile(){
+                    display: none;
+                    
+                }
+                ul{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+                li{
+                font-size: 16px;
+                line-height: 24px;
+                color: white;}
+
+        }
+    }
+    }
+    .socialMedia{
+        ul{
+            width: 208px;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            @include pad{
+                width: 30%;
+            }
+            @include mobile{
+                width: 30%;
+            }
+
+            li{
+              img{
+                  width: 48px;
+                  height: 48px;
+                  display: block;
+                  @include pad{
+                      width: 40px;
+                      height: 40px;
+                  }
+                  @include mobile(){
+                      width: 24px;
+                      height: 24px;
+                  }
+              }
+
+            }
+
+    }
+
+
+}
+}
+}
+
+
+.contactInfo{
+        padding-bottom: 32px;
+        @include mobile(){
+            margin-top: 0;
+            padding-bottom: 24px;
+        }
+        ul{
+            display: block;
+            li{
+                span{
+                    font-size:36px;
+                    color: white;
+                    display: inline-flex;
+                    align-items: center;
+                    @include mobile(){
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    color: white;
+                    font-size: 36px;
+                    line-height:54px;
+                    display: inline;
+                    @include mobile(){
+                        font-size: 16px;
+                        line-height: 24px;
+
+                        }                   
+                }
+
+            }
+        }
+    }
+
+    .footerBottom{
+    max-width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    @include mobile(){
+        width: 100%;
+        display: block;
+        height: auto;}
+  
+    p{
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .copyright{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        @include pad{
+            width: 70%;
+        }
+        @include mobile(){
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+        }
+    }
+    .policy{
+        width: 15%;
+        @include pad{
+            width: 30%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding-top:  40px;
+            padding-bottom: 40px;
+
+                @include mobile{
+                    display: block;
+                    padding-bottom: 16px;
+                    padding-top: 8px;
+                }
+            li{
+                display: block;
+
+
+                @include mobile(){
+                    padding-bottom: 8px;
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
